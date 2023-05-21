@@ -10,10 +10,13 @@ class UserInfo
 		string username;
 		string password;
 	public: 
+		UserInfo() {};
 		bool checkUsername(string un);
-		string checkPassword(string pw);
+		//string checkPassword(string pw);
 		void setUsername(string un);
 		void setPassword(string pw);
+		string getUsername();
+		string getPassword();
 		UserInfo(string un);
 		UserInfo(string un, string pw);
 		~UserInfo();

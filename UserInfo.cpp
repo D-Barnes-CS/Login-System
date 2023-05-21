@@ -13,6 +13,16 @@ bool UserInfo::checkUsername(string un)
 	}
 }
 
+/*string UserInfo::checkPassword(string pw)
+{
+	for (int i = 0; i < pw.size(); i++) {
+		if (iswalnum(pw)) {
+			if (pw[i] == )
+		}
+	}
+	return string();
+}*/
+
 void UserInfo::setUsername(string un)
 {
 	username = un;
@@ -21,6 +31,14 @@ void UserInfo::setUsername(string un)
 void UserInfo::setPassword(string pw)
 {
 	password = pw;
+}
+string UserInfo::getUsername()
+{
+	return username;
+}
+string UserInfo::getPassword()
+{
+	return password;
 }
 /** TODO fix the random password generator and also figure out how to
 make it work efficiently. You have the 68 characters you want in each
@@ -56,8 +74,6 @@ UserInfo::UserInfo(string un, string pw)
 /** TODO fix delete constructor */
 UserInfo::~UserInfo()
 {
-	delete[] *username;
-	delete[] *password;
 }
 
 /**TODO
